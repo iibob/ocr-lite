@@ -1,0 +1,5 @@
+numpy==1.26.2
+opencv_python==4.8.1.78
+onnxruntime==1.17.3
+Shapely==2.1.1
+pyclipper==1.3.0.post2
