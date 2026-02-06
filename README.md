@@ -113,6 +113,7 @@ crnn_text_recognition_only()
 ### 说明
 - v5：PP-OCRv5；v4：PP-OCRv4；lite：OCR-lite
 - 本次仅基于文本识别模型，对同一张图片进行测试
+- ONNX Runtime 版本小于 v1.18.0 时，不兼容 PP-OCRv5 模型
 - 测试设备：
   - CPU型号：Intel(R) Core(TM) i9-10900 @ 2.80GHz（2.81 GHz） 
   - 内存容量：32 GB 
