@@ -51,12 +51,12 @@ def crnn_text_recognition_only():
     from models.keys import alphabet_chinese
 
     image_path = "test_image_2.png"
-    model_path = "models/crnn_lite.onnx"
-    crnn = CRNN(model_path, alphabet_chinese)
+    crnn_model_path = "models/crnn_lite.onnx"
+    recognizer = CRNN(crnn_model_path, alphabet_chinese)
 
-    start_time = time.time()
     img = cv2.imread(image_path)
-    result = crnn.predict(img)
+    start_time = time.time()
+    result = recognizer.predict(img)
     print(f"识别结果：{result}")
     print(f"识别耗时：{time.time() - start_time:.4f} 秒")
 
